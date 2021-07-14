@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+/* fonts import */
+
+/* body styles  */
+body{
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header style starts */
+
+.header-container {
+    width: 100%;
+    height: 677px;
+    background: #2D25A0;
+    padding: 0px;
+    margin: 0px 0px 70px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.item-container{
+    width: 1141px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 102px;
+}
+.item-container img{
+    margin-top: 135px;
+    width: 556px;
+    height: 438px;
+}
+
+.kick-image{
+    width: 556px;
+    height: 438px;
+    transition: width 2s, transform 2s;
+}
+.kick-image:hover{
+    width: 400px;
+    transform: rotate(10deg);
+}
+
+.item-container h1{
+    font-size: 64px;
+    font-weight: 700;
+    margin-top: 207px;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.watch-button{
+    font-size: 16px;
+    font-weight: 500;
+    height:44px ;
+    width: 166px ;
+    background-color: #E02C6D;
+    margin-top: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.watch-button a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.arrow{
+    margin-left: 8px;
+}
+
+
+/* header styles end--------------------- */
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*----- article/blog styles ------*/
+
+.blogs-container{
+    width: 1050px;
+    /* padding: 15px; */
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 27px;
+    margin-bottom: 165px;
+}
+
+.blogs{
+    width: 300px;     /* total width 330px, height 474px */
+    height: 444px;
+    padding: 15px;
+    box-shadow: 0 0 15px rgba(165, 165, 165, 0.514);
+    overflow:hidden;
+}
+.blogs img{
+    width: 100%;
+    height: 256px;
+}
+
+.blogs h2{
+    font-size: 28px;
+    padding-top: 16px;
+    padding-bottom: 10px;
+    margin: 0px;
+}
+.blogs p{
+    margin: 0px;
+    font-size: 16px;
+    font-weight: 400px;
+    color: #6C6C6C;
+}
+/* article/blog style ends  */
+
+/* extra feature videos  */
+
+.video-container{
+    width: 1050px;
+    display: grid;   
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    margin-bottom: 158px;
+}
+
+.stats{
+    height: 315px;
+    overflow:scroll;
+    overflow-x: hidden;
+
+}
+.video-container h4{
+    color: rgb(0, 3, 3);
+    background:rgba(153, 50, 204, 0.329);
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/* bottom-part */
+.logo img{
+    height: 110px;
+    width: 484px;
+    margin-bottom: 20px;
+}
+
+.social-media img{
+
+    height: 32px;
+    width: 32px;
+    margin-bottom: 20px;
+    margin-right: 14px;
+}
+
+/* footer  */
+
+footer p{
+    margin-top: 0px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 63px;
+}
+
+
+
+/*----------------------------- Responsive media query addition ] */
+
+
+
+@media only screen and (max-width: 688px) 
+{
+
+    .header-container {
+        /* width: 360px; */
+        width: 100%;
+        height: 695px;
+        padding: 0px;
+        margin: 0px 0px 70px 0px;
+        /* display: flex;
+        justify-content: center; */
+    }
+
+    .item-container{
+        /* width: 100%; */
+        display:flex;
+        flex-direction: column;
+    }
+
+    .item-container img{
+        margin-top: 50px;
+        width: 330px;
+        height: 260px;
+    }
+
+    .kick-image{
+        width: 330px;
+        height: 260px;
+        transition: width 2s, transform 2s;
+    }
+    .kick-image:hover{
+        width: 200px;
+        transform: rotate(10deg);
+    }
+
+    .item-container h1{
+        font-size: 36px;
+        font-weight: 700;
+        margin-top: 112px;
+        margin-left: 16px;
+        margin-bottom: 0px;
+        color: white;
+    }
+
+    .watch-button{       
+        margin-left: 16px;
+    }
+    /*------------- header ends ------------- */
+
+    main{
+        display: flex;
+        justify-content: center;
+
+    }
+    .blogs-container{
+        
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 60px;
+    }
+        /* blog ends here ------------- */
+
+
+    /* extra feature videos  */
+
+    .video-container{
+        width: 100%;  
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 43px;   
+    }
+    .stats{
+        margin-bottom: 20px;
+    }
+    iframe{
+        width: 100%;
+    }
+    /* bottom-part */
+    .logo img{
+        height: 63px;
+        width: 280px;
+        margin-bottom: 20px;
+    }
+
+
+
+}
+
+/* responsiveness for tab --------------------------------- */
+
+@media only screen and (min-width: 688px) and (max-width: 992px)
+{
+
+    .header-container {
+        /* width: 360px; */
+        width: 100%;
+        height: auto;
+        padding: 0px 0px 40px 0px;    /* change here  */
+        margin: 0px 0px 70px 0px;
+    }
+
+    .item-container{
+
+        display:flex;
+    }
+
+    .item-container img{
+        margin-top: 50px;
+        width: 330px;
+        height: 260px;
+    }
+
+    .kick-image{
+        width: 330px;
+        height: 260px;
+        transition: width 2s, transform 2s;
+    }
+    .kick-image:hover{
+        width: 200px;
+        transform: rotate(10deg);
+    }
+
+    .item-container h1{
+        font-size: 36px;
+        font-weight: 700;
+        margin-top: 112px;
+        margin-left: 46px;          /* change here  */
+        margin-bottom: 0px;
+        color: white;
+    }
+
+    .watch-button{       
+        margin-left: 46px;        /* change here  */
+    }
+    /*------------- header ends ------------- */
+
+    main{
+        display: flex;
+        justify-content: center;
+
+    }
+    .blogs-container{
+        
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);   /* change here  */
+        margin-bottom: 60px;
+    }
+
+    /* blog ends here ------------- */
+
+
+    /* extra feature videos  */
+
+    .video-container{
+        width: 100%;  
+        grid-template-columns: repeat(2, 1fr);   /* change here  */
+        margin-bottom: 43px;   
+    }
+    .stats{
+        margin-bottom: 20px;
+    }
+    iframe{
+        width: 100%;
+    }
+
+    /* bottom-part */
+
+    .logo img{
+        height: 63px;
+        width: 280px;
+        margin-bottom: 20px;
+    }
+
+
+
+
+}
+
+
+
+
+
